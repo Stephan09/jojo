@@ -1,6 +1,6 @@
 const Discord = require('Discord.js');
 const client = new Discord.Client();
-const token = 'NDk3Njg1MjM2NzYzNTkwNjU2.DpojsA.dZNxRXUp69Pfutv7tChj3enE4Eo';
+const token = 'NDk4MTEzMDg3NzY1ODcyNjQ2.DppA4g.P8jh35s2jO6KnL2Z51SBVHaMQJw';
 
 const prefix = '!';
 
