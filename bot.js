@@ -58,7 +58,7 @@ client.on('message', message => {
 	
   
   
-client.login(token);
+client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot
 
 client.on('ready', () => {
 	console.log("Bot ist fertig xD\n\n")
