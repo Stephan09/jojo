@@ -27,6 +27,17 @@ client.on('guildMemberAdd', member => {
 });
 
 
+client.on('message', message => {
+
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
+});
+
+
 client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
