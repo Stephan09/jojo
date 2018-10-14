@@ -1,7 +1,7 @@
 const Discord = require('Discord.js');
 const client = new Discord.Client();
 
-const prefix = '!';
+const prefix = '-';
 
 
 client.on('message', message => {
@@ -10,7 +10,7 @@ client.on('message', message => {
 	 
 	         var embed = new Discord.RichEmbed()
 			 
-			 .addField('here is my list with commands: ', '!help -gives help commands.')
+			 .addField('du brauchst hilfe?: ', '-hilfe und meine kommandos kommen ;) ')
 			 .setColor('GREEN')
 			 
 			message.channel.sendEmbed(embed);
@@ -23,7 +23,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
 		const channel = member.guild.channels.find(ch => ch.name === 'chat');
         if (!channel) return;
-		channel.send(`${member} Welcome to Jojo's World Discord server:grinning:`);
+		channel.send(`${member} Hallo, Herzlich willkommen:`);
 });
 
 
@@ -45,7 +45,7 @@ client.on('message', message => {
 	 
 	         var embed = new Discord.RichEmbed()
 			 
-			 .addField('Hello! I am JoJos Bot:smile:  ', 'At the moment I am a beta bot and will be programmed by Stephan. I dont have many commands yet, but some will come later:wink: .')
+			 .addField('test', 'only test')
 			 .setColor('GREEN')
 			 
 			message.channel.sendEmbed(embed);
@@ -64,3 +64,10 @@ client.on('ready', () => {
 	});
 	
 	
+// THIS  MUST  BE  THIS  WAY
+
+
+
+
+
+
