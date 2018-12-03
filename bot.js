@@ -56,7 +56,7 @@ client.on('message', message => {
 	 
 	         var embed = new Discord.RichEmbed()
 			 
-			 .addField('test', 'only test')
+			 .addField('Test bot', 'hi! i am only a test bot. Our Website:http://www.cordbot-labs.de.rs/')
 			 .setColor('GREEN')
 			 
 			message.channel.sendEmbed(embed);
@@ -67,7 +67,18 @@ client.on('message', message => {
 
 	
   
-  
+ 
+client.on('message', message => {
+	if(message.content.toLowerCase() === prefix + 'web') { if(message.author.bot) { return; }
+	         var embed = new Discord.RichEmbed()
+			 .addField('Hier gehts zur unseren tollen Internet seite ;): ', 'http://www.cordbot-labs.de.rs/  ')
+			 .setColor('GREEN') 
+			message.channel.sendEmbed(embed);
+	}
+	
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 
 
