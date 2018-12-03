@@ -4,6 +4,13 @@ const client = new Discord.Client();
 const prefix = '-';
 
 
+client.on('ready', () => {
+	console.log("Bot ist fertig xD\n\n")
+	});
+
+
+
+
 client.on('message', message => {
 	
 	if(message.content.toLowerCase() === prefix + 'help') { if(message.author.bot) { return; }
